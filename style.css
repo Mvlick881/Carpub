@@ -29,14 +29,22 @@ main section {
   border-bottom: 1px solid #ccc;
   text-align: center;
 }
-input {
+input, textarea {
   padding: 10px;
-  font-size: 16px;
+  margin: 8px;
+  width: 90%;
+  max-width: 400px;
+}
+button {
+  padding: 10px 20px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
 #revenu_estime {
   font-weight: bold;
   color: #0d3b66;
-  margin-top: 10px;
 }
 footer {
   background-color: #000;

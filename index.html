@@ -8,11 +8,8 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  <div id="loader">
-    <div class="loader-ring"></div>
-    <p>Chargement...</p>
-  </div>
-  <div id="content" style="display: none">
+  <div id="loader"><div class="loader-ring"></div><p>Chargement...</p></div>
+  <div id="content" style="display: none;">
     <header>
       <h1>CarPub Martinique</h1>
       <p class="slogan">Largé volant, pran lavant !</p>
@@ -20,26 +17,28 @@
         <a href="#accueil">Accueil</a>
         <a href="#conducteurs">Conducteurs</a>
         <a href="#entreprises">Entreprises</a>
-        <a href="#fonctionnement">Fonctionnement</a>
         <a href="#simulateur">Simulateur</a>
-        <a href="#temoignages">Témoignages</a>
-        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
     <main>
-      <section id="accueil"><h2>Bienvenue chez CarPub</h2><p>Transformez votre voiture en revenu mobile</p></section>
-      <section id="conducteurs"><h2>Conducteurs</h2><p>Inscrivez-vous, roulez, gagnez.</p></section>
-      <section id="entreprises"><h2>Entreprises</h2><p>Offrez à votre marque une visibilité locale.</p></section>
-      <section id="fonctionnement"><h2>Fonctionnement</h2><p>Inscription > Pose de pub > Suivi > Paiement.</p></section>
+      <section id="accueil"><h2>Bienvenue sur CarPub</h2><p>Transformez votre voiture en revenu mobile !</p></section>
+      <section id="conducteurs"><h2>Pour les conducteurs</h2><p>Inscrivez-vous, affichez une pub, roulez et gagnez jusqu’à 150€/mois.</p></section>
+      <section id="entreprises"><h2>Pour les entreprises</h2><p>Boostez votre visibilité locale grâce à la publicité mobile en Martinique.</p></section>
       <section id="simulateur">
         <h2>Simulateur de revenus</h2>
         <input type="number" id="km" placeholder="Kilomètres/mois ?" />
         <p id="revenu_estime"></p>
       </section>
-      <section id="temoignages"><h2>Témoignages</h2><p>"Je gagne jusqu'à 150€/mois sans effort !"</p></section>
-      <section id="faq"><h2>FAQ</h2><p>Assurance, contrat, conditions... on vous dit tout.</p></section>
-      <section id="contact"><h2>Contact</h2><p>contact@carpub-mq.fr</p></section>
+      <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="https://formspree.io/f/xwkgrkoq" method="POST">
+          <input type="text" name="name" placeholder="Votre nom" required />
+          <input type="email" name="email" placeholder="Votre e-mail" required />
+          <textarea name="message" placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
     </main>
     <footer>
       <p>&copy; 2025 CarPub Martinique - Tous droits réservés</p>
